@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 10:00:54 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/02 11:01:50 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/02 12:05:10 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -32,6 +32,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*finalstr;
 
 	finalstr = ft_calloc(1, ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!finalstr)
+		return (NULL);
 	ft_strcpy(finalstr, s1);
 	ft_strcpy(finalstr, s2);
 	*(finalstr + ft_strlen(s1) + ft_strlen(s2)) = '\0';
