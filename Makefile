@@ -16,9 +16,11 @@ OBJS = ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o \
 	   ft_putstr_fd.o ft_putendl_fd.o ft_substr.o ft_strjoin.o ft_striteri.o ft_strmapi.o \
 	   ft_itoa.o ft_putnbr_fd.o #ft_strtrim.o
 
-BONUS_FILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c
+BONUS_FILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 
-BONUS_OBJ = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o
+BONUS_OBJ = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o
+
+TOTAL_OBJS = $(OBJS) $(BONUS_OBJ)
 
 LIB = ./libft-war-machine/
 
@@ -30,9 +32,11 @@ $(NAME) : $(OBJS)
 $(OBJS) : $(CFILES)
 	gcc $(CFLAGS) -c $(CFILES)
 
-bonus : fclean $(OBJS) $(BONUS_OBJ)
+$(BONUS_OBJ) :
 	gcc $(CFLAGS) -c $(BONUS_FILES)
-	ar rc $(NAME) $(OBJS) $(BONUS_OBJS)
+
+bonus : $(OBJS) $(BONUS_OBJ)
+	ar rc $(NAME) $(TOTAL_OBJS)
 
 clean :
 	rm -f $(OBJS) $(BONUS_OBJ)
