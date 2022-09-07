@@ -17,10 +17,10 @@ OBJS = ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o \
 	   ft_itoa.o ft_putnbr_fd.o #ft_strtrim.o
 
 BONUS_FILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-			  ft_lstdelone.c
+			  ft_lstdelone.c ft_lstclear.c
 
 BONUS_OBJ = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o \
-			ft_lstdelone.o
+			ft_lstdelone.o ft_lstclear.o
 
 TOTAL_OBJS = $(OBJS) $(BONUS_OBJ)
 
