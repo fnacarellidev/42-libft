@@ -6,15 +6,15 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 19:02:44 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/07 16:12:58 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/07 19:59:45 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
 
-typedef struct s_list	t_list;
 typedef struct s_list
 {
 	void			*content;
