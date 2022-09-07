@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 20:57:49 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/02 14:53:05 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/07 19:59:37 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (!nmemb || !size)
+	if (!nmemb || !size || (nmemb > SIZE_MAX / size))
 		return (NULL);
 	ptr = (void *) malloc(nmemb * size);
 	if (!ptr)
