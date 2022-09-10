@@ -6,11 +6,10 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 12:15:42 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/02 14:30:12 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/10 16:20:05 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
 static int	countdigits(long int n);
 static void	get_result(long int n, char *str, int *i, int *bytes);
