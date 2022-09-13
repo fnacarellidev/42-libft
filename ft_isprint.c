@@ -6,9 +6,10 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 19:38:12 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/08/29 19:47:49 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/13 22:18:33 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
