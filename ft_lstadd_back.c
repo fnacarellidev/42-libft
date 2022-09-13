@@ -6,12 +6,10 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 18:06:26 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/06 19:28:10 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/13 22:29:00 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
-t_list	*ft_lstlast(t_list *lst);
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
