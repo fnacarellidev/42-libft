@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 00:16:55 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/13 14:19:53 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/13 22:38:55 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -36,7 +36,7 @@ static void	walk_start_of_string(char const *str, char const *set, int *match)
 	}
 }
 
-void	walk_end_of_string(const char *str, char const *set, int *match)
+static void	walk_end_of_string(const char *str, char const *set, int *match)
 {
 	int		last_positions;
 	size_t	j;
@@ -69,5 +69,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = chars_to_be_removed;
 	walk_end_of_string(s1, set, &chars_to_be_removed);
 	trimmed_string = ft_substr(s1, i, ft_strlen(s1) - chars_to_be_removed);
+	if (!trimmed_string)
+		return (NULL);
 	return (trimmed_string);
 }
