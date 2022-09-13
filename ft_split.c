@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:27:54 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/13 16:13:55 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/13 21:51:19 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,10 +30,8 @@ static int	len_until_set(char const *s, char c)
 static int	number_of_words(char const *s, char c)
 {
 	int		count;
-	size_t	len_s;
 
 	count = 0;
-	len_s = ft_strlen(s);
 	while (*s)
 	{
 		if (*s != c)
