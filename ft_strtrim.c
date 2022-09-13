@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 00:16:55 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/12 18:58:20 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/13 14:19:53 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -18,10 +18,12 @@ static void	walk_start_of_string(char const *str, char const *set, int *match)
 {
 	size_t	i;
 	size_t	j;
+	size_t	set_len;
 
 	i = 0;
 	j = 0;
-	while (j < ft_strlen(set))
+	set_len = ft_strlen(set);
+	while (j < set_len)
 	{
 		if (*(str + i) == *(set + j))
 		{
