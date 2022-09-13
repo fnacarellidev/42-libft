@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 10:00:54 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/02 12:05:10 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/09/13 13:07:05 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -39,10 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*(finalstr + ft_strlen(s1) + ft_strlen(s2)) = '\0';
 	return (finalstr);
 }
-//
-//int main()
-//{
-//	char a[] = "lorem ipsum";
-//	char b[] = "dolor sit amet";
-//	printf("%s\n", ft_strjoin(a, b));
-//}
