@@ -29,10 +29,10 @@ $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 $(OBJS) : $(CFILES)
-	cc $(CFLAGS) -c $(CFILES)
+	cc $(CFLAGS) -I ./ -c $(CFILES)
 
 $(BONUS_OBJ) :
-	cc $(CFLAGS) -c $(BONUS_FILES)
+	cc $(CFLAGS) -I ./ -c $(BONUS_FILES)
 	ar rcs $(NAME) $(BONUS_OBJ)
 
 bonus : $(BONUS_OBJ)
