@@ -13,6 +13,26 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
+
+# ifdef __linux__
+#  define NULLABLE "(nil)"
+# else
+#  define NULLABLE "0x0"
+# endif
+
+# define HEX_LOWCASE "0123456789abcdef"
+# define HEX_UPCASE "0123456789ABCDEF"
+# define DEC_DIGITS "0123456789"
+
+// ft_printf stuff
+int		ft_printf(const char *str, ...);
+int		ft_putstr_printf(char *str);
+int		put_base_printf(long long nbr, char *base);
+int		puthex_printf(unsigned long long nbr, int use_uppercase);
+int		ft_put_address(unsigned long long nbr);
+int		putchar_printf(char c);
+size_t	ft_strlen_printf(char *str);
 
 typedef struct s_list
 {
