@@ -8,7 +8,8 @@ CFILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		 ft_strnstr.c ft_calloc.c ft_strdup.c ft_atoi.c ft_putchar_fd.c \
 		 ft_putstr_fd.c ft_putendl_fd.c ft_substr.c ft_strjoin.c ft_striteri.c \
 		 ft_strmapi.c ft_itoa.c ft_putnbr_fd.c  ft_strtrim.c ft_split.c \
-		 ft_putstr.c ft_putchar.c ft_putnbr_base.c ft_printf.c ft_printf_utils.c
+		 ft_putstr.c ft_putchar.c ft_putnbr_base.c ft_printf.c ft_printf_utils.c \
+		 ft_printf.c ft_printf_utils.c
 
 OBJS = ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o \
 	   ft_strlen.o ft_memset.o ft_bzero.o ft_memmove.o ft_memcpy.o ft_strlcpy.o \

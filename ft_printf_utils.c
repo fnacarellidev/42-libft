@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 02:58:14 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/10/05 19:31:03 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/11/24 11:11:00 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -68,7 +68,7 @@ int	put_base_printf(long long nbr, char *base)
 	int	chars_printed;
 
 	chars_printed = 0;
-	len_base = ft_strlen(base);
+	len_base = ft_strlen_printf(base);
 	if (nbr < 0)
 	{
 		nbr *= -1;
