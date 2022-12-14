@@ -6,12 +6,12 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 20:53:23 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/12/14 20:53:32 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/12/14 20:55:26 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	free_matrix(void **matrix)
+void	ft_free_matrix(void **matrix)
 {
 	int	i;
 	int	matrix_len;
