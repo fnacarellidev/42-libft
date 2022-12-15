@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 19:02:44 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/12/15 15:09:45 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/12/15 20:31:47 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -21,7 +21,7 @@
 #  define NULLABLE "0x0"
 # endif
 
-# define HEX_LOWCASE "0123456789abcdef"
+# define HEX_LWCASE "0123456789abcdef"
 # define HEX_UPCASE "0123456789ABCDEF"
 # define DEC_DIGITS "0123456789"
 

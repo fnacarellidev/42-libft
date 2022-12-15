@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 11:22:50 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/11/24 11:10:11 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/12/15 20:31:55 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -32,7 +32,7 @@ static int	ft_percent_handler(char c, va_list ptr)
 	else if (c == 'u')
 		chars_printed += put_base_printf(va_arg(ptr, unsigned int), DEC_DIGITS);
 	else if (c == 'x')
-		chars_printed += put_base_printf(va_arg(ptr, unsigned int), HEX_LOWCASE);
+		chars_printed += put_base_printf(va_arg(ptr, unsigned int), HEX_LWCASE);
 	else if (c == 'X')
 		chars_printed += put_base_printf(va_arg(ptr, unsigned int), HEX_UPCASE);
 	else if (c == '%')

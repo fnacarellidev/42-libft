@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 02:58:14 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/11/24 11:11:00 by fnacarel         ###   ########.fr       */
+/*   Updated: 2022/12/15 20:33:18 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -51,7 +51,7 @@ int	puthex_printf(unsigned long long nbr, int use_uppercase)
 	if (use_uppercase)
 		base = HEX_UPCASE;
 	else
-		base = HEX_LOWCASE;
+		base = HEX_LWCASE;
 	if (nbr < 16)
 		chars_printed += putchar_printf(base[nbr]);
 	else
