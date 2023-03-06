@@ -6,14 +6,14 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 18:06:26 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/13 22:29:00 by fnacarel         ###   ########.fr       */
+/*   Updated: 2023/03/06 15:38:28 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_node **lst, t_node *new)
 {
-	t_list	*last_node;
+	t_node	*last_node;
 
 	if (lst && new)
 	{

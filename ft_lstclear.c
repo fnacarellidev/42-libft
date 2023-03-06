@@ -6,14 +6,14 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 22:42:28 by fnacarel          #+#    #+#             */
-/*   Updated: 2022/09/20 16:43:15 by fnacarel         ###   ########.fr       */
+/*   Updated: 2023/03/06 15:39:00 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_node **lst, void (*del)(void *))
 {
-	t_list	*store_previous_node;
+	t_node	*store_previous_node;
 
 	store_previous_node = *lst;
 	if (del)
@@ -22,7 +22,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		{
 			store_previous_node = *lst;
 			*lst = (*lst)->next;
-			del(store_previous_node -> content);
+			del(store_previous_node->data);
 			free(store_previous_node);
 		}
 		lst = NULL;
