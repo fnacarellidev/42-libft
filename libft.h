@@ -6,7 +6,7 @@
 /*   By: fnacarel <fnacarel@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 19:02:44 by fnacarel          #+#    #+#             */
-/*   Updated: 2023/01/26 01:13:52 by fnacarel         ###   ########.fr       */
+/*   Updated: 2023/03/06 15:51:49 by fnacarel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -34,11 +34,12 @@ int		ft_put_address(unsigned long long nbr);
 int		putchar_printf(char c);
 size_t	ft_strlen_printf(char *str);
 
-typedef struct s_list
+typedef struct s_node
 {
-	void			*content;
-	struct s_list	*next;
-}				t_list;
+	char			*data;
+	struct s_node	*next;
+}				t_node;
+void	ft_free_list(t_node **head);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -50,7 +51,7 @@ int		ft_tolower(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *nptr);
-int		ft_lstsize(t_list *lst);
+int		ft_lstsize(t_node *lst);
 int		ft_count_matrix(void **matrix);
 int		ft_power(int base, int exponent);
 char	*ft_strchr(const char *s, int c);
@@ -75,11 +76,11 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putnbr_fd(int n, int fd);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstclear(t_list **lst, void (*del)(void *));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
+void	ft_lstadd_front(t_node **lst, t_node *new);
+void	ft_lstadd_back(t_node **lst, t_node *new);
+void	ft_lstdelone(t_node *lst, void (*del)(void *));
+void	ft_lstclear(t_node **lst, void (*del)(void *));
+void	ft_lstiter(t_node *lst, void (*f)(void *));
 void	ft_putnbr_base(long long nbr, char *base);
 void	ft_putchar(char c);
 void	ft_free_matrix(void **matrix);
@@ -89,8 +90,8 @@ void	ft_swap(int *a, int *b);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-t_list	*ft_lstnew(void *content);
-t_list	*ft_lstlast(t_list *lst);
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_node	*ft_lstnew(void *content);
+t_node	*ft_lstlast(t_node *lst);
+t_node	*ft_lstmap(t_node *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
