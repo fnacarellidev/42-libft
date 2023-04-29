@@ -11,7 +11,7 @@ CFILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		 ft_putstr.c ft_putchar.c ft_putnbr_base.c \
 		 ft_printf.c ft_printf_utils.c ft_count_matrix.c ft_free_matrix.c \
 		 ft_free_spatial_matrix.c ft_free_matrix_size_n.c ft_swap.c ft_power.c \
-		 ft_free.c
+		 ft_free.c ft_close.c
 
 OBJS = $(CFILES:%.c=%.o)
 	   

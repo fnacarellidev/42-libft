@@ -87,6 +87,7 @@ void	ft_free_matrix(void **matrix);
 void	ft_free_spatial_matrix(void ***matrix);
 void	ft_free_matrix_size_n(void **matrix, int size);
 void	ft_swap(int *a, int *b);
+void	ft_close(int fd);
 void	ft_free(void *ptr);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
